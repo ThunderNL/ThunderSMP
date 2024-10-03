@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ThunderSMP</title>
-    
     <meta property="og:title" content="ThunderSMP - A Minecraft SMP">
     <meta property="og:description" content="Join ThunderSMP, a small Minecraft 1.20.6 SMP available for both Java and Bedrock players.">
     <meta property="og:url" content="https://tsmp.nl.eu.org/">
     <meta property="og:image" content="/icon.png">
     <meta property="og:type" content="website">
-    
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <style>
       .copied {
@@ -29,7 +26,7 @@
         text-align: center;
         display: inline-block;
         cursor: pointer;
-        text-decoration: none; /* Make sure text decoration is none */
+        text-decoration: none;
       }
       .discord-button {
         background-color: #5865F2;
@@ -38,11 +35,11 @@
         background-color: #404EED;
       }
       .map-button {
-        background-color: #28a745; /* Green-ish background */
-        margin-left: 10px; /* Space between buttons */
+        background-color: #28a745;
+        margin-left: 10px;
       }
       .map-button:hover {
-        background-color: #218838; /* Darker green on hover */
+        background-color: #218838;
       }
       .discord-button img, .map-button img {
         vertical-align: middle;
@@ -64,17 +61,17 @@
       }
       .software-grid .column a {
         display: block;
-        background-color: #2f2f2f; /* Dark gray background */
-        color: #fff; /* White text color */
+        background-color: #2f2f2f;
+        color: #fff;
         border-radius: 8px;
-        border: 2px solid #444; /* Subtle dark gray border */
+        border: 2px solid #444;
         padding: 15px;
         text-decoration: none;
         transition: background-color 0.3s, border-color 0.3s;
       }
       .software-grid .column a:hover {
-        background-color: #444; /* Slightly lighter gray on hover */
-        border-color: #666; /* Lighter border on hover */
+        background-color: #444;
+        border-color: #666;
       }
       .software-grid .column img {
         height: 48px;
@@ -118,7 +115,7 @@
             Join Our Discord
           </a>
           <a href="https://tsmp.nl.eu.org/map" target="_blank" class="map-button">
-            <img src="map.svg" alt="Map Icon"> <!-- Ensure to use the correct icon -->
+            <img src="map.svg" alt="Map Icon">
             Open Map
           </a>
 
@@ -137,11 +134,7 @@
             <button id="copy-bedrock-port" class="button is-small" onclick="copyToClipboard(document.getElementById('bedrock-port').innerText, 'copy-bedrock-port')">Copy Port</button>
           </p>
         </div>
-
-        <!-- Divider -->
         <hr class="divider">
-
-        <!-- Software Grid -->
         <div class="software-grid">
           <h2 class="subtitle">ThunderSMP is powered by:</h2>
           <div class="columns is-multiline">
@@ -219,8 +212,14 @@
             </div>
           </div>
         </div>
-      </div>
       <hr class="divider">
+        <div class="content">
+          <h2 class="subtitle">Contact Us</h2>
+          <p>We prefer to be contacted via <a href="https://tsmp.nl.eu.org/discord" target="_blank" class="discord-link">Discord</a> for a quicker response. However, you can also reach us via email:</p>
+          <a href="mailto:tsmp@europe.com" class="button is-link is-medium">Email Us: tsmp@europe.com</a>
+        </div>
+      <hr class="divider">
+      </div>
       <footer>
         <p>© 2024 ThunderSMP. All rights reserved.</p>
         <p>All trademarks, logos, and brand names are the property of their respective owners. This website is not affiliated with any of the mentioned software providers.</p>
