@@ -17,7 +17,7 @@
         color: green;
         font-weight: bold;
       }
-      .discord-button, .map-button {
+      .discord-button, .map-button, .fediverse-button, .bluesky-button {
         margin-top: 20px;
         color: white;
         font-size: 1.25em;
@@ -28,8 +28,23 @@
         cursor: pointer;
         text-decoration: none;
       }
+      .fediverse-button {
+        background-color: #FF8C00;
+        margin-left: 10px;
+      }
+      .fediverse-button:hover {
+        background-color: #E65100;
+      }
+      .bluesky-button {
+        background-color: #0085FF;
+        margin-left: 10px;
+      }
+      .bluesky-button:hover {
+        background-color: #0470D3;
+      }
       .discord-button {
         background-color: #5865F2;
+        margin-left: 10px;
       }
       .discord-button:hover {
         background-color: #404EED;
@@ -41,7 +56,7 @@
       .map-button:hover {
         background-color: #218838;
       }
-      .discord-button img, .map-button img {
+      .discord-button img, .map-button img, .fediverse-button img, .bluesky-button img {
         vertical-align: middle;
         margin-right: 8px;
         width: 24px;
@@ -110,29 +125,36 @@
         </p>
 
         <div class="content">
-          <a href="https://tsmp.nl.eu.org/discord" target="_blank" class="discord-button">
-            <img src="discord.svg" alt="Discord Logo">
-            Join Our Discord
-          </a>
           <a href="https://tsmp.nl.eu.org/map" target="_blank" class="map-button">
             <img src="map.svg" alt="Map Icon">
-            Open Map
+            Map
           </a>
-
-          <h2 class="subtitle" style="margin-top: 20px;">Server IPs:</h2>
-          <p>
+          <a href="https://discord.gg/zaQV7R2paf" target="_blank" class="discord-button">
+            <img src="discord.svg" alt="Discord Logo">
+            Discord: zaQV7R2paf
+          </a>
+          <a href="https://inne.city/profile/tsmp" target="_blank" class="fediverse-button" rel="me">
+            <img src="fediverse.svg" alt="Fediverse Logo">
+            Fediverse: @tsmp@inne.city
+          </a>
+          <a href="https://bsky.app/profile/tsmp.inne.city" target="_blank" class="bluesky-button">
+            <img src="bluesky.svg" alt="Bluesky Logo">
+            Bluesky: @tsmp.inne.city
+          </a>
+          <hr class="divider">
+          <h2 class="subtitle" style="margin-top: 20px;">Server address:</h2>
+          <h3>
             <strong>Java Edition:</strong> 
-            <span id="java-ip">tsmp.nl.eu.org</span>
+            <u><span id="java-ip">tsmp.nl.eu.org</span></u>
             <button id="copy-java-ip" class="button is-small" onclick="copyToClipboard(document.getElementById('java-ip').innerText, 'copy-java-ip')">Copy IP</button>
-          </p>
-
-          <p>
+          </h3>
+          <h3>
             <strong>Bedrock Edition:</strong> 
-            <span id="bedrock-ip">play.tsmp.nl.eu.org</span>
+            <u><span id="bedrock-ip">play.tsmp.nl.eu.org</span></u>
             <button id="copy-bedrock-ip" class="button is-small" onclick="copyToClipboard(document.getElementById('bedrock-ip').innerText, 'copy-bedrock-ip')">Copy IP</button>
-            <span id="bedrock-port">61877</span>
+            <u><span id="bedrock-port">61877</span></u>
             <button id="copy-bedrock-port" class="button is-small" onclick="copyToClipboard(document.getElementById('bedrock-port').innerText, 'copy-bedrock-port')">Copy Port</button>
-          </p>
+          </h3>
         </div>
         <hr class="divider">
         <div class="software-grid">
