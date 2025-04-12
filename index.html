@@ -17,7 +17,7 @@
         color: green;
         font-weight: bold;
       }
-      .discord-button, .map-button, .fediverse-button, .bluesky-button {
+      .discord-button, .map-button, .fediverse-button, .bluesky-button, .mail-button {
         margin-top: 20px;
         color: white;
         font-size: 1.25em;
@@ -56,7 +56,14 @@
       .map-button:hover {
         background-color: #218838;
       }
-      .discord-button img, .map-button img, .fediverse-button img, .bluesky-button img {
+      .mail-button {
+        background-color: #FF5733;
+        margin-left: 10px;
+      }
+      .mail-button:hover {
+        background-color: #C44128;
+      }
+      .discord-button img, .map-button img, .fediverse-button img, .bluesky-button img, .mail-button img {
         vertical-align: middle;
         margin-right: 8px;
         width: 24px;
@@ -127,7 +134,7 @@
         <div class="content">
           <a href="https://map.tsmp.nl.eu.org/" target="_blank" class="map-button">
             <img src="map.svg" alt="Map Icon">
-            Map
+            Map: map.tsmp.nl.eu.org
           </a>
           <a href="https://discord.gg/zaQV7R2paf" target="_blank" class="discord-button">
             <img src="discord.svg" alt="Discord Logo">
@@ -141,15 +148,19 @@
             <img src="bluesky.svg" alt="Bluesky Logo">
             Bluesky: @tsmp.inne.city
           </a>
+          <a href="mailto:tsmp@europe.com" target="_blank" class="mail-button">
+            <img src="mail.svg" alt="Mail Icon">
+            Email Us: tsmp@europe.com
+          </a>
           <hr class="divider">
           <h2 class="subtitle" style="margin-top: 20px;">Server address:</h2>
           <h3>
-            <strong>Java Edition:</strong> 
+            <strong>Java Edition:</strong>
             <u><span id="java-ip">tsmp.nl.eu.org</span></u>
             <button id="copy-java-ip" class="button is-small" onclick="copyToClipboard(document.getElementById('java-ip').innerText, 'copy-java-ip')">Copy IP</button>
           </h3>
           <h3>
-            <strong>Bedrock Edition:</strong> 
+            <strong>Bedrock Edition:</strong>
             <u><span id="bedrock-ip">play.tsmp.nl.eu.org</span></u>
             <button id="copy-bedrock-ip" class="button is-small" onclick="copyToClipboard(document.getElementById('bedrock-ip').innerText, 'copy-bedrock-ip')">Copy IP</button>
             <u><span id="bedrock-port">19132</span></u>
@@ -161,21 +172,21 @@
           <h2 class="subtitle">ThunderSMP is powered by:</h2>
           <div class="columns is-multiline">
             <div class="column is-one-quarter">
-              <a href="https://libre.computer/">
-                <img src="libre_computer.png" alt="Libre Computer Logo">
-                <p>Libre Computer</p>
+              <a href="https://www.hetzner.com/">
+                <img src="hetzner.png" alt="Hetzner Logo">
+                <p>Hetzner</p>
               </a>
             </div>
             <div class="column is-one-quarter">
-              <a href="https://www.armbian.com/">
-                <img src="armbian.png" alt="Armbian Logo">
-                <p>Armbian</p>
+              <a href="https://fedoraproject.org/server/">
+                <img src="fedora-server.png" alt="Fedora Server Logo">
+                <p>Fedora Server</p>
               </a>
             </div>
             <div class="column is-one-quarter">
-              <a href="https://craftycontrol.com/">
-                <img src="crafty_controller.png" alt="Crafty Controller">
-                <p>Crafty Controller</p>
+              <a href="https://www.pufferpanel.com/">
+                <img src="pufferpanel.png" alt="PufferPanel Logo">
+                <p>PufferPanel</p>
               </a>
             </div>
             <div class="column is-one-quarter">
@@ -208,37 +219,7 @@
                 <p>squaremap</p>
               </a>
             </div>
-            <div class="column is-one-quarter">
-              <a href="https://playit.gg/">
-                <img src="playit.png" alt="playit.gg Logo">
-                <p>playit.gg</p>
-              </a>
-            </div>
-            <div class="column is-one-quarter">
-              <a href="https://nl.eu.org/">
-                <img src="nl.gif" alt="NL.EU.ORG Logo">
-                <p>NL.EU.ORG</p>
-              </a>
-            </div>
-            <div class="column is-one-quarter">
-              <a href="https://desec.io/">
-                <img src="desec.svg" alt="deSEC Logo">
-                <p>deSEC</p>
-              </a>
-            </div>
-            <div class="column is-one-quarter">
-              <a href="https://pages.github.com/">
-                <img src="githubpages.svg" alt="GitHub Pages Logo">
-                <p>GitHub Pages</p>
-              </a>
-            </div>
           </div>
-        </div>
-      <hr class="divider">
-        <div class="content">
-          <h2 class="subtitle">Contact Us</h2>
-          <p>We prefer to be contacted via <a href="https://tsmp.nl.eu.org/discord" target="_blank" class="discord-link">Discord</a> for a quicker response. However, you can also reach us via email:</p>
-          <a href="mailto:tsmp@europe.com" class="button is-link is-medium">Email Us: tsmp@europe.com</a>
         </div>
       <hr class="divider">
       </div>
