@@ -99,6 +99,13 @@
         height: 48px;
         margin-bottom: 10px;
       }
+      .donate-button-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transform: scale(1.5);
+        transform-origin: bottom right;
+      }
       footer {
         text-align: center;
         margin-top: 20px;
@@ -229,5 +236,22 @@
         <p>This site is made using <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">Bulma</a>.</p>
       </footer>
     </section>
+    <div class="donate-button-container">
+        <script src="https://liberapay.com/ThunderNL/widgets/button.js"></script>
+        <noscript>
+            <a href="https://liberapay.com/ThunderNL/donate">
+                <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
+            </a>
+        </noscript>
+    </div>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('thundernl', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support Us',
+        'floating-chat.donateButton.background-color': '#ff5f5f',
+        'floating-chat.donateButton.text-color': '#fff'
+      });
+    </script>
   </body>
 </html>
